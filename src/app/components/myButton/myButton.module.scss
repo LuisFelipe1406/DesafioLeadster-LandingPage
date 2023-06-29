@@ -1,0 +1,25 @@
+@import "/styles/colors.scss";
+
+.button {
+    padding: 1vh 2vh;
+
+    color: $color-dark-blue;
+    background-color: #ffff;
+
+    border: 1px solid $color-dark-blue;
+    border-radius: 20px;
+}
+
+.button:hover {
+    color: $color-blue;
+    background-color: #ffff;
+    border: 1px solid $color-blue;
+    
+    cursor: pointer;
+}
+
+.selected {
+    color: #fff;
+    background-color: $color-blue;
+    border: 1px solid $color-blue;
+}

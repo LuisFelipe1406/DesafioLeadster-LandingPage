@@ -1,0 +1,40 @@
+@import "/styles/colors.scss";
+
+.selectors {
+    width: min-content;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 7vh;
+
+    padding: 2vh;
+
+    border-bottom: 1px solid $color-light-gray;
+
+    display: grid;    
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 15vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    column-gap: 1vh;
+}
+
+.select {
+    padding: 1vh 1vh;
+
+    margin-left: 2vh;
+
+    color: $color-dark-blue;
+    background-color: #ffff;
+
+    border: 1px solid $color-dark-blue;
+    border-radius: 8px;
+}

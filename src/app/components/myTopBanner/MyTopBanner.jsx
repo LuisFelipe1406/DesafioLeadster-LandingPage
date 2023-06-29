@@ -12,7 +12,7 @@ function MyTopBanner() {
                 <h1 className={Styles.subtitle}>Menos Conversinha,</h1>
                 <section className={Styles.titleSection}>
                     <h1 className={Styles.title}>Mais Conversão</h1> 
-                    <Image className={Styles.icBanner} src={ assetBanner } />
+                    <Image className={Styles.icBanner} src={ assetBanner } alt="Símbolo no Texto" />
                 </section>
             </section>
             <section className={Styles.bottomInfo}>

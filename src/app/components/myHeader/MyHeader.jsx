@@ -5,7 +5,7 @@ import Logo from "public/img/logo.png";
 function MyHeader() {
     return (
         <header className={Styles.header}>
-            <Image src={ Logo } />
+            <Image src={ Logo } alt="Logo"/>
         </header> 
     );
 }
