@@ -3,6 +3,7 @@
 import Styles from "./myVideoGalery.module.scss";
 import videosData from "config/videos.json"
 import MyVideoCard from "../myVideoCard/MyVideoCard"
+import MyVideoPlayer from "../myVideoPlayer/MyVideoPlayer"
 import { useEffect, useState } from "react";
 
 function MyVideoGalery() {
@@ -10,6 +11,10 @@ function MyVideoGalery() {
     const MAX_ITENS = 9;    
     const [videos, setVideos] = useState(videosData.videos);
     const [pages, setPages] = useState(getPages());
+    
+    // To play a video
+    const [ playVideo, setPlayVideo ] = useState(false);
+    const [ videoPlayed, setVideoPlayed ] = useState(0);
 
     // Get an number of pages according videos
     function getPages() {
@@ -60,6 +65,18 @@ function MyVideoGalery() {
         setVideos(auxVideos);
     }
 
+    // To open a video
+    function openVideo(video) {
+        setVideoPlayed(video);
+        setPlayVideo(true);
+    }
+
+    // To close the video
+    function closeVideo() {
+        setVideoPlayed(0);
+        setPlayVideo(false);
+    }
+
     useEffect(() => {
         //First page starts selected
         changePage(0);    
@@ -67,12 +84,18 @@ function MyVideoGalery() {
 
     return (
         <section className={Styles.galery}>
+            { playVideo && <MyVideoPlayer 
+                video={ videosData.videos[videoPlayed] }
+                closeVideo={ closeVideo }
+            /> }
             <section className={Styles.videos}>
                 { videos.map((video, index) => (
                     <MyVideoCard 
                     key={ index }
+                    id={ video.id }
                     title={ video.title }
                     thumbnail={ video.thumbnail }
+                    videoClicked={ openVideo }
                     />
                 )) }
             </section>

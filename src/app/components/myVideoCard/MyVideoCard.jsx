@@ -6,10 +6,12 @@ import { useState } from "react";
 import { FaPlay } from 'react-icons/fa';
 
 /* PROPS
+    id: number
     title: String
     thumbnail: String
+    videoClicked: handler
  */
-function MyVideoCard({ title, thumbnail }) {
+function MyVideoCard({ id, title, thumbnail, videoClicked }) {
     const [selected, setSelected] = useState(false);
 
     function imageLoader(src) {
@@ -28,10 +30,15 @@ function MyVideoCard({ title, thumbnail }) {
         }        
     }
 
+    // Emit a callback to open the video clicked
+    function openVideo() {
+        videoClicked(id);
+    }
+
     return (
         <div className={Styles.divVideo} onMouseEnter={selectCard} onMouseLeave={selectCard}>
             { selected && <div className={Styles.play}>
-                <FaPlay size={50} className={Styles.icPlay} />
+                <FaPlay size={50} className={Styles.icPlay} onClick={ openVideo }/>
             </div> }
             <Image 
                 className={Styles.thumbnail}
