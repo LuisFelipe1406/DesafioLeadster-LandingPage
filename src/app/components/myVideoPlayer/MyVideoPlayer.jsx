@@ -8,6 +8,7 @@ import { IoMdClose } from 'react-icons/io';
 
 /* PROPS
     video: Video
+    closeVideo: handler
  */
 function MyVideoPlayer({ video, closeVideo }) {
     // To close the video player
