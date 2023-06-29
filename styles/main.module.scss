@@ -1,24 +1,23 @@
 @import "/styles/colors.scss";
 
+.content {
+    display: grid;
+}
+
 .selectors {
     width: min-content;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
 
     margin-top: 7vh;
 
     padding: 2vh;
 
-    border-bottom: 1px solid $color-light-gray;
-
     display: grid;    
     grid-template-columns: repeat(2, max-content);
-    column-gap: 15vh;
+    column-gap: 25vh;
 
+    justify-self: center;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .buttons {
@@ -28,7 +27,7 @@
 }
 
 .select {
-    padding: 1vh 1vh;
+    padding: 1vh;
 
     margin-left: 2vh;
 

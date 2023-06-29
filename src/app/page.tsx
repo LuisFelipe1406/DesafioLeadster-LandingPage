@@ -1,10 +1,11 @@
 'use client';
 
 import Styles from "../../styles/main.module.scss"
+import React, { useState } from "react";
 import MyHeader from "./components/myHeader/myHeader"
 import MyTopBanner from "./components/myTopBanner/MyTopBanner"
 import MyButton from "./components/myButton/MyButton"
-import React, { useState } from "react";
+import MyVideoGalery from "./components/myVideoGalery/MyVideoGalery"
 
 function Home() {
     // List of buttons above videos section
@@ -47,7 +48,7 @@ function Home() {
     }
 
     return (
-      <div>
+      <div className={Styles.content}>
           <MyHeader />
           <MyTopBanner />
           <section className={Styles.selectors}>
@@ -70,6 +71,7 @@ function Home() {
                   </select>
               </section>
           </section>
+          <MyVideoGalery />          
       </div>
     )
 }

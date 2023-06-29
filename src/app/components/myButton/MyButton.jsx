@@ -5,7 +5,6 @@ import Styles from "./myButton.module.scss";
     selected: boolean
     action: handler
  */
-
 function MyButton({ title, selected, action }) {
 
     function getSelected() {

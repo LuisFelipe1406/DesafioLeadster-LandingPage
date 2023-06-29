@@ -1,0 +1,24 @@
+@import "/styles/colors.scss";
+
+.divVideo {
+    width: min-content;
+
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+}
+
+.thumbnail {
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.title {
+    padding: 2vh 4vh;
+
+    color: $color-dark-blue;
+    font-weight: 700;
+
+    border-radius: 0px 0px 15px 15px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
