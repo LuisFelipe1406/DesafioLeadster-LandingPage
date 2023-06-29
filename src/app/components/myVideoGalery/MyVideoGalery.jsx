@@ -95,7 +95,7 @@ function MyVideoGalery() {
                     id={ video.id }
                     title={ video.title }
                     thumbnail={ video.thumbnail }
-                    videoClicked={ openVideo }
+                    videoClicked={ () => openVideo(index) }
                     />
                 )) }
             </section>

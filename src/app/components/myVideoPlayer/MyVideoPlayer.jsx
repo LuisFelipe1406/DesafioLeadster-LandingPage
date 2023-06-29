@@ -5,12 +5,18 @@ import Document from "public/img/Document.png";
 import Presentation from "public/img/Presentation.png";
 import Folder from "public/img/Folder.png";
 import { IoMdClose } from 'react-icons/io';
+import YouTube from "react-youtube";
 
 /* PROPS
     video: Video
     closeVideo: handler
  */
 function MyVideoPlayer({ video, closeVideo }) {
+    const opts = {
+        height: '360',
+        width: '640',
+    };
+
     // To close the video player
     function exit() {
         closeVideo();
@@ -22,7 +28,7 @@ function MyVideoPlayer({ video, closeVideo }) {
                 <IoMdClose size={30} className={Styles.icClose} onClick={exit}/>
                 <h3 className={Styles.title}><strong>Webinar:</strong> { video.title }</h3>
                 <div className={Styles.video}>
-                    VIDEO
+                    <YouTube videoId={video.id_youtube} opts={opts} />
                 </div>
                 <section className={Styles.details}>
                    <span>Descrição</span>
@@ -36,12 +42,6 @@ function MyVideoPlayer({ video, closeVideo }) {
                         <Image src={ Presentation } alt="Presentation" className={Styles.downloadButton} />
                    </div>
                 </section>
-            </section>
-            <section className={Styles.download}>
-                <Image src={ Spreadsheet } alt="Spreadsheet" className={Styles.downloadButton} />
-                <Image src={ Document } alt="Document" className={Styles.downloadButton} />
-                <Image src={ Presentation } alt="Presentation" className={Styles.downloadButton} />
-                <Image src={ Folder } alt="Presentation" className={Styles.downloadButton} />
             </section>
         </section>        
     );
