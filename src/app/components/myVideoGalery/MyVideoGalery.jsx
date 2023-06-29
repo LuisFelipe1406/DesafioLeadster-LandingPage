@@ -6,7 +6,8 @@ import MyVideoCard from "../myVideoCard/MyVideoCard"
 import { useEffect, useState } from "react";
 
 function MyVideoGalery() {
-    const MAX_ITENS = 9;      // Max videos for page
+    // Max videos for page
+    const MAX_ITENS = 9;    
     const [videos, setVideos] = useState(videosData.videos);
     const [pages, setPages] = useState(getPages());
 
@@ -57,9 +58,6 @@ function MyVideoGalery() {
         const auxVideos = videosData.videos.slice((pageClicked * MAX_ITENS), (pageClicked * MAX_ITENS) + MAX_ITENS);
 
         setVideos(auxVideos);
-
-        console.log(pageClicked);
-        console.log(auxVideos);
     }
 
     useEffect(() => {
