@@ -1,0 +1,67 @@
+@import "/styles/colors.scss";
+
+.content {
+    width: 100%;
+
+    padding: 15vh;
+
+    margin-top: 7vh;
+
+    background-color: $color-light-blue;
+    
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    column-gap: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 50vh;
+
+    padding: 2vh 0vh;
+    
+    color: $color-dark-blue;
+
+    text-align: left;
+    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2vh;
+}
+
+.mainInfo {
+    padding: inherit;
+    
+    border-bottom: 1px solid $color-light-gray;
+}
+
+.mainInfo h1 {
+   font-size: 32px;
+   font-weight: 600;
+
+   margin-bottom: 1vh;
+}
+
+.mainInfo h3 {
+    font-size: 16px;
+    font-weight: 600; 
+}
+
+.secondaryInfo {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 2vh;
+}
+
+.rowSecInfo {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 1vh;
+    align-items: center;
+}
+
+.rowSecInfo span {
+    font-size: 12px;
+    font-weight: 600; 
+}

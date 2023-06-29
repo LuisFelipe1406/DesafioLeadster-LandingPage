@@ -6,6 +6,7 @@ import MyHeader from "./components/myHeader/myHeader"
 import MyTopBanner from "./components/myTopBanner/MyTopBanner"
 import MyButton from "./components/myButton/MyButton"
 import MyVideoGalery from "./components/myVideoGalery/MyVideoGalery"
+import MyBottomBanner from "./components/myBottomBanner/MyBottomBanner"
 
 function Home() {
     // List of buttons above videos section
@@ -71,7 +72,8 @@ function Home() {
                   </select>
               </section>
           </section>
-          <MyVideoGalery />          
+          <MyVideoGalery />
+          <MyBottomBanner />
       </div>
     )
 }
