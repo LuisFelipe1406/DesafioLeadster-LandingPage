@@ -1,6 +1,6 @@
 'use client'
 
-import Styles from "./myVideoCard.module.scss";
+import Styles from "./myVideosCard.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 import { FaPlay } from 'react-icons/fa';
