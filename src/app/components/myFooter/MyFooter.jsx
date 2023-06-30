@@ -52,7 +52,7 @@ function MyFooter() {
                 </section>
             </section>
             <section className={Styles.footerBottomInfo}>
-                <span>Esse projeto é meramente uma ferramenta de estudo do Desafio Leadster | Feito por Luis Felipe da Silva</span>
+                <span>Esse projeto é objeto de estudo do Desafio Leadster | Feito por Luis Felipe da Silva</span>
                 <span>Rua José Loureiro, 464 - Centro - Curitiba PR - CEP - 80010-000 | Termos de uso</span>
             </section>
         </footer>

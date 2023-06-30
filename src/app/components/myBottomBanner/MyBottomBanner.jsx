@@ -16,7 +16,9 @@ function MyBottomBanner() {
                 src="chart.png"
                 width={739}
                 height={687}
-                alt="chart" />
+                alt="chart" 
+                className={Styles.imgBottom}
+                />
             <section className={Styles.info}>
                 <section className={Styles.mainInfo}>
                     <h1>Pronto para triplicar sua <strong>Geração de Leads?</strong></h1>

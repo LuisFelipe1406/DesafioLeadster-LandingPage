@@ -65,3 +65,22 @@
     font-size: 12px;
     font-weight: 600; 
 }
+
+/* For other devices */
+@media only screen and (max-width: 1300px) {
+    .imgBottom {
+        max-width: 55vh;
+        max-height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        column-gap: 3vh;
+    }
+
+    .imgBottom {
+        max-width: 48vh;
+        max-height: 45vh;
+    }
+}

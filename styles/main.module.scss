@@ -37,3 +37,16 @@
     border: 1px solid $color-dark-blue;
     border-radius: 8px;
 }
+
+/* For other devices */
+@media only screen and (max-width: 1200px) {
+    .selectors {
+        column-gap: 30vh;    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .selectors {
+        column-gap: 5vh;    
+    }
+}

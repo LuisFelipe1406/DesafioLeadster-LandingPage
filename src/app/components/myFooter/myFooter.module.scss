@@ -96,9 +96,30 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 15vh;
+    column-gap: 30vh;
 }
 
 .footerBottomInfo span {
     justify-self: center;
+}
+
+/* For other devices */
+@media only screen and (max-width: 1200px) {
+    .footerInfo {
+        column-gap: 4vh;  
+    }
+    
+    .footerBottomInfo {
+        column-gap: 20vh;   
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footerInfo {
+        column-gap: 0vh;  
+    }
+    
+    .footerBottomInfo {
+        column-gap: 7vh;   
+    }
 }
