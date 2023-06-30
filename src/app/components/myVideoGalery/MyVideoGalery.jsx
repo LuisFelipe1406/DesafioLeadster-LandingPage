@@ -2,7 +2,7 @@
 
 import Styles from "./myVideoGalery.module.scss";
 import videosData from "config/videos.json"
-import MyVideoCard from "../myVideoCard/MyVideoCard"
+import MyVideoCard from "../myVideosCard/MyVideosCard"
 import MyVideoPlayer from "../myVideoPlayer/MyVideoPlayer"
 import { useEffect, useState } from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
