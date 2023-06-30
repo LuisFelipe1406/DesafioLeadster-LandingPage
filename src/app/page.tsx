@@ -2,7 +2,7 @@
 
 import Styles from "../../styles/main.module.scss"
 import React, { useState } from "react";
-import MyHeader from "./components/myHeader/myHeader"
+import MyHeader from "./components/myHeader/MyHeader"
 import MyTopBanner from "./components/myTopBanner/MyTopBanner"
 import MyButton from "./components/myButton/MyButton"
 import MyVideoGalery from "./components/myVideoGalery/MyVideoGalery"
