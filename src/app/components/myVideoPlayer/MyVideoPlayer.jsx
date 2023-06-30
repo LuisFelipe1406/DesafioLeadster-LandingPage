@@ -3,7 +3,6 @@ import Image from "next/image";
 import Spreadsheet from "public/img/Spreadsheet.png";
 import Document from "public/img/Document.png";
 import Presentation from "public/img/Presentation.png";
-import Folder from "public/img/Folder.png";
 import { IoMdClose } from 'react-icons/io';
 import YouTube from "react-youtube";
 

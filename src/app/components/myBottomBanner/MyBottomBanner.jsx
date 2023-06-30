@@ -2,7 +2,7 @@
 
 import Styles from "./myBottomBanner.module.scss";
 import Image from "next/image";
-import MyButton from "../myButton/MyButton"
+import MyButton from "../myButton/MyButton";
 
 function MyBottomBanner() {
     function imageLoader(src) {
@@ -13,7 +13,7 @@ function MyBottomBanner() {
         <section className={Styles.content}>
             <Image
                 loader={() => imageLoader("https://i.imgur.com/LS4WNnz.png")}
-                src="chart.png" 
+                src="chart.png"
                 width={739}
                 height={687}
                 alt="chart" />
